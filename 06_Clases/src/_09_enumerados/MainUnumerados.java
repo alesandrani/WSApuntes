@@ -38,6 +38,7 @@ public class MainUnumerados {
 		p1.setDireccion(d1);
 		System.out.println(p1);
 		d1.setTipoVia(TipoVia.CAÑADA_REAL);
-		System.out.println(p1);
+		System.out.println(p1
+				);
 	}
 }
