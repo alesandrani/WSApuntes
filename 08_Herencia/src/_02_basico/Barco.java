@@ -10,6 +10,16 @@ public class Barco extends Vehiculo {
 	public void setEsPirata(boolean esPirata) {
 		this.esPirata = esPirata;
 	}
+
+	@Override
+	public String toString() {
+		return "Barco [esPirata=" + esPirata + ", getMarca()=" + getMarca() + ", getPeso()=" + getPeso()
+				+ ", getVelocidad()=" + getVelocidad() + ", getFechaFabricacion()=" + getFechaFabricacion() + "]";
+	}
 	
+	/*
+	 * Como la clase barco tiene atributos especificos vamos sobreescribir el metodo toString para 
+	 * que nos muestre los dichos atributos
+	 */
 
 }
