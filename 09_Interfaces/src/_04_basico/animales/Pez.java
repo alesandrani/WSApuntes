@@ -1,4 +1,4 @@
-package _01_basico.animales;
+package _04_basico.animales;
 /**
  * Si heredamos de una clase que tiene metodos abstractos tenemos 3 opciones:
  * 
@@ -8,6 +8,21 @@ package _01_basico.animales;
  * 3. declarar la clase como abstracta y implementar sus metodos
  */
 public abstract class Pez extends Animal {
+	@Override
+	public void moverseLento() {
+		double movimiento = 200 - (getPeso() * 0.10)+(25 * numeroAletas);
+		System.out.println("Soy un Pez y me muevo " + movimiento);
+		
+	}
+
+	@Override
+	public void moverseRapido() {
+		double movimiento = 200 - (getPeso() * 0.10)+(50 * numeroAletas);
+		System.out.println("Soy un Pez y me muevo " + movimiento);
+		
+		
+	}
+
 	private int numeroAletas;
 
 	@Override
