@@ -14,6 +14,7 @@ public class Coche extends VehiculoTerrestre {
 		double movimiento = 300 - (getPeso() * 0.10);
 		System.out.println("Soy un coche y me muevo " + movimiento);
 		
+		
 	}
 
 }

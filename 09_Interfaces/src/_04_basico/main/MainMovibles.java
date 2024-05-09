@@ -76,7 +76,28 @@ public class MainMovibles {
 		for(Movible m : listaMovibles) {
 			m.moverseRapido();
 		}
-
+		
+		//Las interfaces no se puede instanciar
+		//Movible m1 = new Movible();NO
+		
+		//pero si podemos crear clases anonimas
+		Movible m1 = new Movible() {
+			//podemos cerar atributos,pero es muy dificil acceder a ellos desde fuera
+			public int atrubuto1;
+			//suponemos que objeto movible es un barco
+			@Override
+			public void moverseRapido() {
+				System.out.println("soy un barco y me muevo a 345");
+				
+			}
+			
+			@Override
+			public void moverseLento() {
+				System.out.println("soy un barco y me muevo a 230");
+				
+			}
+		};
+		listaMovibles.add(m1);
 	}
 
 }
